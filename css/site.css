@@ -1,0 +1,122 @@
+/* wxradar site-wide styles */
+
+body{
+	background-color:#002200;
+	background-image: url('../images/scale_grid2.png');
+	color: silver;	/* TEMP: just to see text */
+}
+
+/* used for DataBox titles */
+h3{
+	font-family: "Helvetica Neue", "Arial",  sans-serif;
+  font-style: normal;
+  font-weight: 300;
+  font-variant-ligatures: normal;
+	font-size: 20px;
+	line-height: 18px;
+  letter-spacing: 1px;
+	margin-bottom: 0px;
+}
+
+@media(min-width:600px){
+		/* left-side container */
+    .container1{
+      display: flex;
+      /*
+      align-items:flex-start;
+      align-items:flex-end;
+      align-items:center;
+
+      flex-direction:column;
+      */
+    }
+	}
+
+/* generic box to display data */
+.DataBox{
+	margin: 0px;
+	padding: 5px;
+	border: solid #770000 1px;
+	color: #00cc00;
+	font-family: "Helvetica Neue", "Arial",  sans-serif;
+  font-style: normal;
+  font-weight: 300;
+  font-variant-ligatures: normal;
+	font-size: 14px;
+	line-height: 16px;
+  letter-spacing: 1px;
+	white-space: nowrap;
+}
+
+.LeftBox{
+  order:1;
+	flex-basis:175px;
+	padding: 0px;
+	margin: 0px;
+	background: linear-gradient(#000063, #000000);
+}
+
+.RadarBox{
+  order:2;
+	flex-basis:600px;
+	width: 600px;
+	height: 550px;
+}
+
+/* to contain 2 DataBoxes side-by-side */
+.SubContainer{
+	display:flex;
+	flex-direction:row;
+}
+
+.Version{
+	flex:3;
+	text-align:center;
+}
+.Credits{
+	flex:2;
+	text-align:center;
+}
+
+
+.big_data{
+	font-size: 16px;
+	line-height: 17px;
+  letter-spacing: 1px;
+}
+
+.medium_data{
+	font-size: 14px;
+	line-height: 15px;
+  letter-spacing: 1px;
+}
+
+.small_data{
+	font-size: 12px;
+	line-height: 15px;
+  letter-spacing: 1px;
+	/* font-weight: 300;
+	color: #00dd00; */
+}
+
+.xsmall_data{
+	font-size: 10px;
+	line-height: 11px;
+  letter-spacing: 1px;
+}
+
+/* DEV */
+.RadarImgDEV{
+	position: relative;;
+	width: 600px;
+	height: 550px;
+	/* width: 545px;
+	height: 500px; */
+	align-content: center;
+	background-image: url('../images/KATX_L3_CREF_20210819_004021.png');
+  background-size: 410px 410px;
+  /* background-size: 355px 355px; */
+  background-position:center;
+  background-repeat: no-repeat;
+  margin:0px;
+}
